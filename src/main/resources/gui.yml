@@ -1,0 +1,77 @@
+
+# CollectionLog GUI Configuration
+
+main-menu:
+  title: "Collection Log"
+  size: 54 # Must be a multiple of 9 (9, 18, 27, 36, 45, 54)
+  
+  # Border item (for slots around the edge)
+  border-item:
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+    
+  # Next page button
+  next-page:
+    material: ARROW
+    name: "&aNext Page"
+    slot: 53
+    
+  # Previous page button
+  previous-page:
+    material: ARROW
+    name: "&aPrevious Page"
+    slot: 45
+    
+  # Close button
+  close:
+    material: BARRIER
+    name: "&cClose"
+    slot: 49
+    
+  # Information button
+  info:
+    material: BOOK
+    name: "&eCollection Log Info"
+    slot: 4
+    lore:
+      - "&7View your collection progress"
+      - "&7and discover new items."
+      
+  # Category slots (where category buttons will be placed)
+  category-slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34]
+  
+category-menu:
+  title: "%category% Collection"
+  size: 54
+  
+  # Progress indicator
+  progress:
+    material: EXPERIENCE_BOTTLE
+    name: "&aCollection Progress"
+    slot: 4
+    lore:
+      - "&7%collected%/%total% Items Collected"
+      - "&7%percentage%% Complete"
+      
+  # Back button
+  back:
+    material: ARROW
+    name: "&aBack to Categories"
+    slot: 49
+    
+  # Item slots
+  item-slots: [10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 29, 30, 31, 32, 33, 34, 37, 38, 39, 40, 41, 42, 43]
+  
+  # Collected item appearance
+  collected:
+    glow: true
+    lore-addition:
+      - ""
+      - "&aCollected!"
+      
+  # Uncollected item appearance
+  uncollected:
+    material: GRAY_DYE
+    name: "&8???"
+    lore:
+      - "&7This item hasn't been collected yet."

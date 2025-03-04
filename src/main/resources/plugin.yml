@@ -1,0 +1,19 @@
+
+name: CollectionLog
+version: '${project.version}'
+main: com.collectionlog.CollectionLog
+api-version: '1.20'
+authors: [CollectionLogDev]
+description: A collection log plugin for Minecraft servers
+commands:
+  log:
+    description: Open the collection log GUI
+    usage: /log
+    permission: collectionlog.use
+permissions:
+  collectionlog.use:
+    description: Allows players to use the collection log
+    default: true
+  collectionlog.admin:
+    description: Allows admin commands for the collection log
+    default: op

@@ -1,0 +1,30 @@
+
+# CollectionLog Configuration
+
+# General settings
+settings:
+  # Save interval in minutes
+  save-interval: 10
+  
+  # Should we notify players when they collect a new item?
+  collection-notifications: true
+  
+  # Should we use titles for notifications?
+  use-titles: true
+  
+  # Should we play a sound when collecting a new item?
+  play-sound: true
+  collection-sound: ENTITY_PLAYER_LEVELUP
+  
+  # Should we use a particle effect when collecting a new item?
+  show-particles: true
+  particle-type: VILLAGER_HAPPY
+
+# OpenAI Integration (for possible future AI-driven features)
+openai:
+  enabled: false
+  api-key: ""
+  model: "gpt-3.5-turbo"
+
+# Debug mode
+debug: false

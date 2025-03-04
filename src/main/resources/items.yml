@@ -1,0 +1,99 @@
+
+# CollectionLog Items Configuration
+
+# Example format:
+# categories:
+#   <category-name>:
+#     display-item: <material>
+#     display-name: "<display name>"
+#     items:
+#       <unique-id>:
+#         material: <material>
+#         name: "<name>"
+#         model-data: <custom-model-data> # Optional
+#         lore:
+#           - "Lore line 1"
+#           - "Lore line 2"
+
+categories:
+  ores:
+    display-item: DIAMOND_ORE
+    display-name: "&bMining Collection"
+    items:
+      coal:
+        material: COAL
+        name: "&8Coal"
+        lore:
+          - "&7A common mining resource"
+      iron:
+        material: IRON_INGOT
+        name: "&fIron Ingot"
+        lore:
+          - "&7A basic crafting material"
+      gold:
+        material: GOLD_INGOT
+        name: "&6Gold Ingot"
+        lore:
+          - "&7A valuable crafting material"
+      diamond:
+        material: DIAMOND
+        name: "&bDiamond"
+        lore:
+          - "&7The most precious gem"
+      emerald:
+        material: EMERALD
+        name: "&aEmerald"
+        lore:
+          - "&7Currency of the villagers"
+          
+  weapons:
+    display-item: DIAMOND_SWORD
+    display-name: "&cWeapons Collection"
+    items:
+      wooden_sword:
+        material: WOODEN_SWORD
+        name: "&eWooden Sword"
+        lore:
+          - "&7A basic weapon"
+      stone_sword:
+        material: STONE_SWORD
+        name: "&8Stone Sword"
+        lore:
+          - "&7An upgraded weapon"
+      iron_sword:
+        material: IRON_SWORD
+        name: "&fIron Sword"
+        lore:
+          - "&7A standard weapon"
+      golden_sword:
+        material: GOLDEN_SWORD
+        name: "&6Golden Sword"
+        lore:
+          - "&7A flashy but weak weapon"
+      diamond_sword:
+        material: DIAMOND_SWORD
+        name: "&bDiamond Sword"
+        lore:
+          - "&7A powerful weapon"
+      netherite_sword:
+        material: NETHERITE_SWORD
+        name: "&8Netherite Sword"
+        lore:
+          - "&7The ultimate weapon"
+          
+  custom_items:
+    display-item: KNOWLEDGE_BOOK
+    display-name: "&dCustom Items"
+    items:
+      custom_sword:
+        material: DIAMOND_SWORD
+        name: "&5Void Blade"
+        model-data: 1001
+        lore:
+          - "&7A mysterious weapon from another dimension"
+      custom_bow:
+        material: BOW
+        name: "&cPhoenix Bow"
+        model-data: 1002
+        lore:
+          - "&7A bow infused with the power of rebirth"

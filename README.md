@@ -1,69 +1,56 @@
-# Welcome to your Lovable project
 
-## Project info
+# Collection Log
 
-**URL**: https://lovable.dev/projects/43df9818-6875-4cab-a853-525245316dd3
+A Minecraft plugin for tracking collected items with a clean, intuitive GUI.
 
-## How can I edit this code?
+## Features
 
-There are several ways of editing your application.
+- **Comprehensive Item Tracking**: Track any item in the game, including those with custom model data.
+- **Intuitive GUI**: Beautiful and responsive collection log interface accessible with `/log`.
+- **Customizable Categories**: Organize items into categories for easy browsing.
+- **Visual Feedback**: Get notifications when collecting new items, with optional sound and particle effects.
+- **Persistence**: All collection data is saved and loaded automatically.
+- **Admin Commands**: Reset data and reload configurations with simple commands.
 
-**Use Lovable**
+## Commands
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/43df9818-6875-4cab-a853-525245316dd3) and start prompting.
+- `/log` - Open the collection log GUI
+- `/log category <id>` - Open a specific category directly
+- `/log reload` - Reload the plugin configuration (requires permission)
+- `/log reset` - Reset your collection data (requires permission)
 
-Changes made via Lovable will be committed automatically to this repo.
+## Permissions
 
-**Use your preferred IDE**
+- `collectionlog.use` - Allows players to use the collection log (default: true)
+- `collectionlog.admin` - Allows admin commands for the collection log (default: op)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Configuration
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### config.yml
+General plugin settings, including notification preferences and save interval.
 
-Follow these steps:
+### items.yml
+Define categories and items for the collection log. Each item can have:
+- Material
+- Display name
+- Custom model data (optional)
+- Lore
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### gui.yml
+Customize the appearance of the collection log GUI, including:
+- Inventory size and title
+- Border items
+- Button placement
+- Item appearance for collected/uncollected items
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Development
 
-# Step 3: Install the necessary dependencies.
-npm i
+Built with Paper API 1.20.6 and utilizing the following design principles:
+- Clean, modular code structure
+- Efficient data management
+- Responsive user interface
+- Comprehensive error handling
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+## License
 
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/43df9818-6875-4cab-a853-525245316dd3) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
+This project is licensed under the MIT License - see the LICENSE file for details.
